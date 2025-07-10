@@ -1,6 +1,6 @@
 # WhatsApp Integration with AI Services
 
-Este proyecto integra un servicio de WhatsApp con capacidades de inteligencia artificial utilizando Spring Boot, Spring AI, y un sistema de gestión de memoria y vectorización de datos. Permite recibir mensajes de WhatsApp, procesarlos mediante un modelo de inteligencia artificial y devolver respuestas en función del análisis de los mensajes o mediante búsqueda semántica usando un **Vector Store**.
+Este proyecto integra un servicio de WhatsApp con capacidades de inteligencia artificial utilizando JAVA Spring Boot, Spring AI, y un sistema de gestión de memoria y vectorización de datos. Permite recibir mensajes de WhatsApp, procesarlos mediante un modelo de inteligencia artificial y devolver respuestas en función del análisis de los mensajes o mediante búsqueda semántica usando un **Vector Store**.
 
 para la instalacion de PgVectorStore leer la guia oficial o cargar la imagen docker que deja SpringAI
 ---
