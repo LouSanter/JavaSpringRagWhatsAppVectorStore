@@ -18,7 +18,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   ai:
     openai:
-      api-key: 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
+      api-key:
       embedding:
         options:
           model: text-embedding-3-small

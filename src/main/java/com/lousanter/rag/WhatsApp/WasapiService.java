@@ -15,8 +15,8 @@ import java.util.Map;
 @Service
 public class WasapiService {
 
-    private final String API_KEY = "52472|qDBPitIPygY7Z0Sr8RlLlZUNX6O3b5T53NMtyDjg";
-    private final String URL = "https://api-ws.wasapi.io/api/v1/whatsapp-messages";
+    private final String API_KEY = "";
+    private final String URL = "";
 
     public void enviarMensaje(String waId, String fromId, String mensaje) {
         System.out.println("ENVIANDO MENSAJE DESDE WASAPISERVICE");
