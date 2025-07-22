@@ -1,7 +1,7 @@
 package com.lousanter.rag.Controller;
 
 
-import com.lousanter.rag.Model.Entity.HistorialAcademico;
+import com.lousanter.rag.Model.HistorialAcademico;
 import com.lousanter.rag.services.HistorialAcademicoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

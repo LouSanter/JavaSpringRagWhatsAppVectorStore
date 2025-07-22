@@ -1,4 +1,4 @@
-package com.lousanter.rag.Model.Entity;
+package com.lousanter.rag.Model;
 
 
 import jakarta.persistence.*;

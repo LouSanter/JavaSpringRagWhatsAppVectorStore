@@ -1,6 +1,6 @@
 package com.lousanter.rag.Controller;
 
-import com.lousanter.rag.Model.Entity.Profesor;
+import com.lousanter.rag.Model.Profesor;
 import com.lousanter.rag.services.ProfesorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

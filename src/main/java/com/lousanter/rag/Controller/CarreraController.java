@@ -1,7 +1,7 @@
 package com.lousanter.rag.Controller;
 
 
-import com.lousanter.rag.Model.Entity.Carrera;
+import com.lousanter.rag.Model.Carrera;
 import com.lousanter.rag.services.CarreraService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

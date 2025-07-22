@@ -1,5 +1,4 @@
-package com.lousanter.rag.Model.Entity;
-
+package com.lousanter.rag.Model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -10,23 +9,16 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Estudiante {
+public class Profesor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long idEstudiante;
+    private Long idProfesor;
 
     private String nombreCompleto;
     private String email;
-    private String fechaIngreso;
-
-    @ManyToOne
-    @JoinColumn(name = "idCarrera", referencedColumnName = "id")
-    private Carrera carrera;
-
-
-
+    private String especialidad;
 
 
 }

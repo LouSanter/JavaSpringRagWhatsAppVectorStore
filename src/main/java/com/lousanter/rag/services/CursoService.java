@@ -1,7 +1,7 @@
 package com.lousanter.rag.services;
 
-import com.lousanter.rag.Model.Entity.Curso;
-import com.lousanter.rag.Model.Repository.CursoRepo;
+import com.lousanter.rag.Model.Curso;
+import com.lousanter.rag.Repository.CursoRepo;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.ai.vectorstore.filter.Filter;

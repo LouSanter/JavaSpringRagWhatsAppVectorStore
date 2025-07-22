@@ -1,10 +1,10 @@
 package com.lousanter.rag.services;
 
 
-import com.lousanter.rag.Model.Entity.Carrera;
-import com.lousanter.rag.Model.Entity.Estudiante;
-import com.lousanter.rag.Model.Repository.CarreraRepo;
-import com.lousanter.rag.Model.Repository.EstudianteRepo;
+import com.lousanter.rag.Model.Carrera;
+import com.lousanter.rag.Model.Estudiante;
+import com.lousanter.rag.Repository.CarreraRepo;
+import com.lousanter.rag.Repository.EstudianteRepo;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.ai.vectorstore.filter.Filter;

@@ -17,7 +17,7 @@ public class IAService {
 
     private final ChatClient.Builder builder;
     private final VectorStore vectorStore;
-    private final ChatMemory memoria = MessageWindowChatMemory.builder().build(); // Memoria única
+    private final ChatMemory memoria = MessageWindowChatMemory.builder().build();
 
     public IAService(ChatClient.Builder builder, VectorStore vectorStore) {
         this.builder = builder;

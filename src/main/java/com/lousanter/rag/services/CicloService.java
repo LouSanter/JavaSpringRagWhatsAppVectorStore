@@ -1,7 +1,7 @@
 package com.lousanter.rag.services;
 
-import com.lousanter.rag.Model.Entity.Ciclo;
-import com.lousanter.rag.Model.Repository.CicloRepo;
+import com.lousanter.rag.Model.Ciclo;
+import com.lousanter.rag.Repository.CicloRepo;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.ai.vectorstore.filter.Filter;

@@ -1,8 +1,8 @@
 package com.lousanter.rag.services;
 
 
-import com.lousanter.rag.Model.Entity.Profesor;
-import com.lousanter.rag.Model.Repository.ProfesorRepo;
+import com.lousanter.rag.Model.Profesor;
+import com.lousanter.rag.Repository.ProfesorRepo;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.ai.vectorstore.filter.Filter;

@@ -1,7 +1,7 @@
 package com.lousanter.rag.services;
 
-import com.lousanter.rag.Model.Entity.Carrera;
-import com.lousanter.rag.Model.Repository.CarreraRepo;
+import com.lousanter.rag.Model.Carrera;
+import com.lousanter.rag.Repository.CarreraRepo;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.ai.vectorstore.filter.Filter;

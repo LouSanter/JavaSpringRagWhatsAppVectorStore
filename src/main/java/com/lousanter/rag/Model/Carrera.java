@@ -1,25 +1,24 @@
-package com.lousanter.rag.Model.Entity;
+package com.lousanter.rag.Model;
+
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+public class Carrera {
 
-public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long idCurso;
+    private Long idCarrera;
 
     private String nombre;
-    private String creditos;
+    private int duracion;
 
 
 }

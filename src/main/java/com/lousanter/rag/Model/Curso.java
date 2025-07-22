@@ -1,28 +1,25 @@
-package com.lousanter.rag.Model.Entity;
-
+package com.lousanter.rag.Model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-import java.time.LocalDate;
+import lombok.Setter;
 
 @Entity
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Ciclo {
+@Getter
+@Setter
 
+public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long idCiclo;
+    private Long idCurso;
 
     private String nombre;
-    private LocalDate fechaInicio;
-    private LocalDate fechaFin;
-
+    private String creditos;
 
 
 }

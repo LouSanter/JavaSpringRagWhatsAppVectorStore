@@ -1,12 +1,10 @@
 package com.lousanter.rag.Controller;
 
 
-import com.lousanter.rag.Model.Entity.Estudiante;
+import com.lousanter.rag.Model.Estudiante;
 import com.lousanter.rag.services.EstudianteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/estudiantes")
