@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+pre {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    margin-top: 1rem;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+#titulo {
+    font-size: 2rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    animation: fadeInUp 1s ease-out;
+}
+
+section h2 {
+    margin-top: 1.5rem;
+    color: #90caf9;
+    font-size: 1.5rem;
+    border-left: 4px solid #42a5f5;
+    padding-left: 0.5rem;
+}
+
+section p {
+    margin: 0.8rem 0;
+    color: #b0bec5;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 1.5rem;
+    color: #cfd8dc;
+}
+
+h3 {
+    margin-top: 1.2rem;
+    color: #64b5f6;
+    font-size: 1.2rem;
+}
+
+li {
+    margin: 0.4rem 0;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    #titulo {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* BURBUJA flotante */
+.chat-bubble {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 60px;
+    height: 60px;
+    background: #0084FF;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.chat-bubble:hover {
+    transform: scale(1.1);
+}
+
+.chat-bubble svg {
+    fill: white;
+    width: 28px;
+    height: 28px;
+}
+
+/* Caja de chat estilo Facebook */
+.chat-box {
+    position: fixed;
+    color: rgb(54, 54, 54);
+    bottom: 100px;
+    right: 24px;
+    width: 320px;
+    max-height: 450px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    animation: fadeInUp 0.3s ease-out;
+    z-index: 1000;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.chat-box-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.chat-box-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.chat-box-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-box-input input {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.chat-box-input button {
+    margin-left: 5px;
+    padding: 6px 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.user-msg, .ia-msg {
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    white-space: pre-wrap;
+}
+
+
+.user-msg {
+    background-color: #DCF8C6;
+    float: right;
+    text-align: right;
+}
+
+.ia-msg {
+    background-color: #F1F0F0;
+    float: left;
+    text-align: left;
+}
+
+.typing {
+    font-style: italic;
+    color: gray;
+    margin: 5px;
+}
+
